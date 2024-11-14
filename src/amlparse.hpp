@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+/*
+* AML Parser
+* Format:
+* key=value
+* key=value1,value2
+*/
+
 namespace cpptools{
     vector<string> get_aml_values(string key, string file) {
         regex key_r("^" + key + "=");
