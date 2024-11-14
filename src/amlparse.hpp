@@ -9,7 +9,7 @@ using namespace std;
 */
 
 namespace cpptools{
-    vector<string> get_aml_values(string key, string file) {
+    vector<string> aml_values(string key, string file) {
         regex key_r("^" + key + "=");
         regex sp(" ");
         string ln;
